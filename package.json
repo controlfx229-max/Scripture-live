@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
+    "start": "node local/server.js",
+    "dev": "node --watch local/server.js",
     "update": "powershell -ExecutionPolicy Bypass -File update.ps1",
     "bibles": "node scripts/list-bibles.js"
   },

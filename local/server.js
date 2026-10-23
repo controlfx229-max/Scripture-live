@@ -2,7 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import { createServer } from 'http';
 import { WebSocketServer, WebSocket } from 'ws';
-import { getPassage, configured } from './lib/passage.js';
+import { getPassage, configured } from '../lib/passage.js';
 
 const KEY = process.env.DEEPGRAM_API_KEY;
 const PORT = process.env.PORT || 3000;
