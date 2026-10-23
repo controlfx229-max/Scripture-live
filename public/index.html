@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Scripture Live</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap">
+<header><h1>Scripture Live</h1><span class="pill" id="status">Mic off</span></header>
+<section class="card" id="stageCard">
+<div class="stage" id="stage" title="Click for fullscreen"><div class="ref" id="ref">Ready</div><div class="txt" id="txt">Say a scripture…</div><div class="ver" id="ver">KJV</div></div>
+<div class="sug" id="sug"><b id="sugT"></b><button class="p" id="sugOk">Show ⏎</button><button id="sugNo">✕</button></div>
+<div class="row">
+<button id="prev">◀ Prev verse</button><button id="next" class="p">Next verse ▶</button><button id="undo">↶ Undo</button>
+<input class="go" id="go" placeholder="Type a reference or what the pastor says… e.g. John 3:16" autocomplete="off">
+</div>
+<div class="row">
+<button id="mic" class="p">🎤 Start listening</button>
+<select id="engine"><option value="dg">Deepgram (accurate)</option><option value="browser">Browser (free)</option></select>
+<select id="lang"><option value="en-GH">English (Ghana)</option><option value="en-NG">English (Nigeria)</option><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option></select>
+<select id="qmode"><option value="suggest">Quotes: suggest only</option><option value="auto">Quotes: auto-show</option><option value="off">Quotes: off</option></select>
+<select id="mode"><option value="auto">Auto – show instantly</option><option value="manual">Manual – confirm first</option></select>
+<select id="vsel"><option>KJV</option><option>ASV</option><option>BSB</option><option value="RV1909">Español – Reina-Valera 1909</option><option value="FRDARBY">Français – Darby</option></select>
+<button id="pop">⧉ Projector window</button>
+</div>
+<p class="note">Keys: ← → previous/next verse · Enter confirms a suggestion · Esc dismisses. Use Chrome or Edge for the microphone. If the mic is blocked here, open this page in its own tab.</p>
+</section>
+<aside class="card">
+<h3>Hearing</h3><div class="live" id="live"><i>Nothing yet…</i></div>
+<h3 style="margin-top:14px">Activity</h3><ul class="log" id="log"></ul>
+</aside>
+</div>
+<div id="link" title="Green = connected to the operator window"></div><script type="module" src="app.js"></script></body></html>
